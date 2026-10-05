@@ -84,7 +84,7 @@ Before submission:
 
 ## Development and attribution
 
-Based on [HubSpot Academy's official starter](https://github.com/HubSpot-Academy/integrating-with-hubspot-i-foundations-practicum). Implementation and tests were prepared with AI assistance at the account owner's request. Commits record actual implementation changes; they do not represent independent unaided work or guarantee Academy acceptance. Review the course's own-work requirement before submitting.
+Based on [HubSpot Academy's official starter](https://github.com/HubSpot-Academy/integrating-with-hubspot-i-foundations-practicum). Implementation and tests were prepared with AI assistance at the account owner's request.
 
 ## API references
 
@@ -92,3 +92,4 @@ Based on [HubSpot Academy's official starter](https://github.com/HubSpot-Academy
 - [Custom object identifiers: base-name support removed](https://developers.hubspot.com/changelog/breaking-change-removed-support-for-referencing-custom-object-types-by-base-name)
 
 Tokens are passed only in Authorization headers. Error responses and logs do not expose Axios configuration or upstream credential values. Runtime requests have a 15-second timeout. Form values are trimmed, required and limited to 200 characters. API errors render a recoverable response and preserve input on failed saves.
+
