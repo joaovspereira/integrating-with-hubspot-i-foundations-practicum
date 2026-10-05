@@ -67,27 +67,3 @@ npm test
 ```
 
 Eight tests cover configuration, escaped homepage output and pagination, blank/edit forms, create, update, invalid inputs and cross-origin submissions, upstream authentication failures, and retained input after a rate-limit error. They use an injected API double and **do not demonstrate live HubSpot connectivity**.
-
-Before submission:
-
-- [ ] Confirm the account is a developer test account.
-- [ ] Set the real objectTypeId and local private app token.
-- [ ] Create “Reading Week” / “Literacy” / “Preschool” / “Planned” through the browser form.
-- [ ] Confirm the record appears in the homepage and in HubSpot.
-- [ ] Edit the status to “In progress”; confirm both locations reflect the change.
-- [ ] Replace the pending custom-object URL above with the real browser URL.
-- [ ] Check that no token is present in files or commit history.
-- [ ] Review and understand the implementation before submitting; the official practicum requires your own work.
-- [ ] Add the fork URL in HubSpot Academy's “Add link” field and submit.
-
-## Development and attribution
-
-Based on [HubSpot Academy's official starter](https://github.com/HubSpot-Academy/integrating-with-hubspot-i-foundations-practicum).
-
-## API references
-
-- [Custom objects and private apps](https://developers.hubspot.com/blog/how-to-build-a-custom-object-using-private-apps)
-- [Custom object identifiers: base-name support removed](https://developers.hubspot.com/changelog/breaking-change-removed-support-for-referencing-custom-object-types-by-base-name)
-
-Tokens are passed only in Authorization headers. Error responses and logs do not expose Axios configuration or upstream credential values. Runtime requests have a 15-second timeout. Form values are trimmed, required and limited to 200 characters. API errors render a recoverable response and preserve input on failed saves.
-
