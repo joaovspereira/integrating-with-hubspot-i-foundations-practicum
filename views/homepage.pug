@@ -1,0 +1,34 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title= title
+    link(rel="stylesheet" href="/css/style.css")
+  body
+    main
+      h1 Educational Projects
+      p HubSpot Academy — Foundations Practicum
+      a.button(href="/project-form") Add a new project
+      if error
+        p.error(role="alert")= error
+      else if projects && projects.length
+        .cards
+          each project in projects
+            article.card
+              h2= project.properties.project_name || 'Untitled project'
+              dl
+                dt Type
+                dd= project.properties.project_type || '—'
+                dt Target audience
+                dd= project.properties.target_audience || '—'
+                dt Status
+                dd= project.properties.project_status || '—'
+              a(href='/project-form?id=' + encodeURIComponent(project.id)) Edit project
+        if next
+          p
+            a(href='/?after=' + encodeURIComponent(next)) Next page
+        p
+          a(href="/") First page
+      else
+        p No projects found. Create your first project using the form.

@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title= title
+    link(rel="stylesheet" href="/css/style.css")
+  body
+    main.form-wrapper
+      h1= title
+      if error
+        p.error(role="alert")= error
+      form(action="/project-form" method="post")
+        input(type="hidden" name="record_id" value=recordId)
+        each label, key in {project_name: 'Project name', project_type: 'Project type', target_audience: 'Target audience', project_status: 'Project status'}
+          label(for=key)= label
+          input(type="text" id=key name=key value=values[key] || '' required maxlength="200")
+        button(type="submit")= recordId ? 'Update project' : 'Create project'
+      p
+        a(href="/") Return to homepage
