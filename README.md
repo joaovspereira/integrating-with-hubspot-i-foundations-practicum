@@ -2,8 +2,6 @@
 
 Educational Projects custom object integration, prepared for João Vitor Pereira using the official HubSpot Academy starter.
 
-**Developer test account custom object URL: PENDING — copy the exact URL from the authenticated developer test account before submission.**
-
 ## Submission status
 
 The application implementation and eight offline integration tests are complete. The developer test account, custom object configuration, live API verification, and Academy submission are not yet verified. Do not submit until the URL above has been replaced and the live checklist below has passed.
