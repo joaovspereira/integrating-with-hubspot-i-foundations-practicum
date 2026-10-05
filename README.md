@@ -84,7 +84,7 @@ Before submission:
 
 ## Development and attribution
 
-Based on [HubSpot Academy's official starter](https://github.com/HubSpot-Academy/integrating-with-hubspot-i-foundations-practicum). Implementation and tests were prepared with AI assistance at the account owner's request.
+Based on [HubSpot Academy's official starter](https://github.com/HubSpot-Academy/integrating-with-hubspot-i-foundations-practicum).
 
 ## API references
 
